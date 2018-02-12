@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: #c5cae9;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #f57f17;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="184.0" layoutX="38.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Ballet_Shoes_96px.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="24.0" layoutY="193.0" text="School Management System" textFill="#320b8f">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="374.0" text="\@CopyRight by wanchanok" />
+         </children>
+      </Pane>
+      <JFXTextField fx:id="username" focusColor="#6d3fe2" layoutX="322.0" layoutY="53.0" promptText="username" unFocusColor="#c99908">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" focusColor="#6d3fe2" layoutX="322.0" layoutY="106.0" promptText="password" unFocusColor="#c99908">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXPasswordField>
+      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="268.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8_Conference_100px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="268.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8_Password_1_100px.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnLogin" layoutX="357.0" layoutY="153.0" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #f57f17;" text="login" textFill="#f5eeee">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="261.0" layoutY="369.0" text="DB status : " />
+      <Label fx:id="dbStatus" layoutX="323.0" layoutY="370.0" prefHeight="17.0" prefWidth="150.0" textFill="#cd0909">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
